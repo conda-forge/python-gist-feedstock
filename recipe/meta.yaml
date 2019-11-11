@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: python-gist
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python-gist/python-gist-{{ version }}.tar.gz
-  sha256: e031225b8381c08639ad570363cf4c9cc0379c3b48870cbd4f5d479a1712a219
+  sha256: 4bf4c782a169e6771de9c996228f23b635cc7d99cf8a0502ea8cade22ff884a5
 
 build:
   number: 0
