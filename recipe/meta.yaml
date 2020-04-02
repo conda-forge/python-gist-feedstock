@@ -9,9 +9,11 @@ source:
   sha256: 73885ff47d6d35cd2192e8447a6acbf2572dd8187b9439bc64330824f7fa8178
 
 build:
-  number: 0
-  skip: true  # [win]
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 1
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - gist = gist.client:main
 
 requirements:
   host:
@@ -27,6 +29,11 @@ requirements:
 test:
   imports:
     - gist
+  commands:
+    - pip check
+    - gist --help
+  requires:
+    - pip
 
 about:
   home: http://github.com/jdowner/gist
