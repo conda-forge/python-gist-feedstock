@@ -31,7 +31,6 @@ test:
     - gist
   commands:
     - pip check
-    - gist --help
   requires:
     - pip
 
