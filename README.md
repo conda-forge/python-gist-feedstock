@@ -36,6 +36,7 @@ Installing `python-gist` from the `conda-forge` channel can be achieved by addin
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `python-gist` can be installed with:
